@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceso Restringido · EH</title>
     <style>
         body {
@@ -14,6 +15,7 @@
             justify-content: center;
             margin: 0;
             text-align: center;
+            user-select: none; /* Evita que seleccionen texto */
         }
         .card {
             border: 1px solid rgba(212, 175, 55, 0.3);
@@ -35,13 +37,33 @@
         h1 { font-family: 'Cormorant Garamond', serif; letter-spacing: 2px; }
     </style>
 </head>
-<body>
-    <div class="card">
+<body oncontextmenu="return false;"> <div class="card">
         <img src="https://cdn-icons-png.flaticon.com/512/3053/3053493.png" width="60" alt="Logo">
         <h1>SISTEMA EN DESARROLLO</h1>
         <div class="loader"></div>
         <p>Lo sentimos, esta sección está siendo encriptada por la Élite.</p>
         <p style="color: #666; font-size: 0.8rem;">Vuelve pronto, Soldado.</p>
     </div>
+
+    <script>
+        // Bloqueo de teclas (F12, Ctrl+Shift+I, Ctrl+U, etc.)
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123) return false; // F12
+            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'C'.charCodeAt(0))) return false;
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false; // Ver código fuente
+        };
+
+        // Anti-Debugger: Si abren la consola, entrará en un bucle que congela la inspección
+        (function() {
+            var block = function() {
+                setInterval(function() {
+                    debugger;
+                }, 50);
+            };
+            try { block(); } catch (err) {}
+        })();
+        
+        console.log("%c¡ALTO! Zona bajo protección de la Élite.", "color: red; font-size: 20px; font-weight: bold;");
+    </script>
 </body>
 </html>
