@@ -1,132 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Emergency Hamburg</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <title>Acceso Restringido · EH</title>
+    <style>
+        body {
+            background: #0a0c0f;
+            color: #d4af37;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            text-align: center;
+        }
+        .card {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 40px;
+            border-radius: 20px;
+            background: #15181e;
+            box-shadow: 0 0 20px rgba(196, 30, 30, 0.2);
+        }
+        .loader {
+            border: 4px solid #1e232b;
+            border-top: 4px solid #c41e1e;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        h1 { font-family: 'Cormorant Garamond', serif; letter-spacing: 2px; }
+    </style>
 </head>
-
 <body>
-
-<header>
-
-<h1>EMERGENCY HAMBURG</h1>
-<p>Organización estratégica internacional</p>
-
-<nav>
-
-<a href="#inicio">Inicio</a>
-<a href="#historia">Historia</a>
-<a href="#jerarquia">Jerarquía</a>
-<a href="#reglas">Reglas</a>
-<a href="#reclutamiento">Reclutamiento</a>
-
-</nav>
-
-</header>
-
-<section id="inicio" class="hero">
-
-<h2>Bienvenido</h2>
-
-<p>
-Una organización basada en estrategia, disciplina y lealtad.
-</p>
-
-</section>
-
-<section id="historia">
-
-<h2>Nuestra Historia</h2>
-
-<p>
-Emergency Hamburg nació con el objetivo de crear una organización estructurada,
-capaz de coordinar operaciones y mantener el orden entre sus miembros.
-</p>
-
-</section>
-
-<section id="jerarquia">
-
-<h2>Jerarquía</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Don</h3>
-<p>Líder máximo.</p>
-</div>
-
-<div class="card">
-<h3>Consigliere</h3>
-<p>Consejero estratégico.</p>
-</div>
-
-<div class="card">
-<h3>Capos</h3>
-<p>Encargados de equipos.</p>
-</div>
-
-<div class="card">
-<h3>Soldados</h3>
-<p>Miembros activos.</p>
-</div>
-
-<div class="card">
-<h3>Reclutas</h3>
-<p>Nuevos integrantes.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="reglas">
-
-<h2>Reglas</h2>
-
-<ul>
-
-<li>Respeto a la jerarquía</li>
-<li>Lealtad a la organización</li>
-<li>Disciplina</li>
-<li>Trabajo en equipo</li>
-
-</ul>
-
-</section>
-
-<section id="reclutamiento">
-
-<h2>Solicitar ingreso</h2>
-
-<form action="https://formspree.io/f/xpqywwvn" method="POST">
-
-<input type="text" name="nombre" placeholder="Nombre" required>
-
-<input type="text" name="usuario" placeholder="Usuario Roblox / Discord" required>
-
-<input type="number" name="edad" placeholder="Edad" required>
-
-<textarea name="mensaje" placeholder="¿Por qué quieres unirte?"></textarea>
-
-<button type="submit">Enviar solicitud</button>
-
-</form>
-
-</section>
-
-<footer>
-
-<p>Emergency Hamburg © 2026</p>
-
-</footer>
-
-<script src="script.js"></script>
-
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3053/3053493.png" width="60" alt="Logo">
+        <h1>SISTEMA EN DESARROLLO</h1>
+        <div class="loader"></div>
+        <p>Lo sentimos, esta sección está siendo encriptada por la Élite.</p>
+        <p style="color: #666; font-size: 0.8rem;">Vuelve pronto, Soldado.</p>
+    </div>
 </body>
 </html>
